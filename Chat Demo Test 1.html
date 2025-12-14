@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px 'Helvetica Neue'; min-height: 25.0px}
+    span.s1 {font: 20.0px 'Apple Color Emoji'}
+    span.s2 {font: 20.0px 'Lucida Grande'}
+  </style>
+</head>
+<body>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;!doctype html&gt;</b></p>
+<p class="p1"><b>&lt;html lang="en"&gt;</b></p>
+<p class="p1"><b>&lt;head&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;title&gt;Gervais Mechanical LLC | Worcester, MA HVAC&lt;/title&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;!-- Inter font --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;!-- Tailwind CDN --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;script&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>tailwind.config = {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>theme: {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>extend: {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>colors: {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>ink: '#0F172A',</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>slate: '#334155',</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>sand: '#F7F4EE',</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>fog: '#EEF2F6'</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>},</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>boxShadow: {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>soft: '0 10px 30px rgba(15, 23, 42, 0.08)',</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>}</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>}</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>}</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>}</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;/script&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;style&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>/* subtle page smoothness */</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>html { scroll-behavior: smooth; }</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;/style&gt;</b></p>
+<p class="p1"><b>&lt;/head&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b>&lt;body class="font-sans text-ink bg-white"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;!-- Top bar (matches the “simple header + contact button” vibe) --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-black/5"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;a href="#top" class="font-semibold tracking-tight"&gt;Gervais Mechanical&lt;/a&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;nav class="hidden md:flex items-center gap-6 text-sm text-slate"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;a href="#services" class="hover:text-ink"&gt;Services&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;a href="#how" class="hover:text-ink"&gt;How it works&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;a href="#areas" class="hover:text-ink"&gt;Service areas&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;a href="#reviews" class="hover:text-ink"&gt;Reviews&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/nav&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="flex items-center gap-2"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;a href="tel:+15085550123" class="hidden sm:inline-flex px-4 py-2 rounded-full border border-black/10 text-sm hover:border-black/20"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>Call (508) 555-0123</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;a href="#contact" class="inline-flex px-4 py-2 rounded-full border-2 border-ink text-sm font-medium hover:bg-ink hover:text-white transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>Contact us</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;/header&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;!-- HERO: split layout like your Durable screenshot --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;main id="top" class="min-h-[86vh]"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;section class="grid lg:grid-cols-2 min-h-[86vh]"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;!-- Left panel --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="bg-sand"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="mx-auto max-w-xl px-6 py-14 lg:py-20"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;p class="text-sm font-medium text-slate"&gt;Worcester, MA • Heating • Cooling • Repairs • Installs&lt;/p&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>Reliable Heating &amp;amp; Cooling Services</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/h1&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;p class="mt-5 text-base sm:text-lg text-slate leading-relaxed"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>Trust &lt;span class="font-semibold text-ink"&gt;Gervais Mechanical LLC&lt;/span&gt; for responsive, homeowner-friendly HVAC service in Worcester and the surrounding area—comfort restored fast, without the runaround.</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/p&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;!-- CTA row (matches screenshot CTA) --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="mt-7 flex flex-col sm:flex-row gap-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-semibold shadow-soft hover:opacity-95 transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>Schedule Service Now</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;a href="#services" class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-black/10 bg-white hover:border-black/20 transition font-semibold"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>View Services</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;!-- HERO CONTACT FORM (funnel requirement) --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div id="contact" class="mt-9 rounded-2xl bg-white border border-black/10 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;div class="p-5 sm:p-6"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;div class="flex items-start justify-between gap-4"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;h2 class="text-lg font-bold tracking-tight"&gt;Request Service&lt;/h2&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;p class="mt-1 text-sm text-slate"&gt;We’ll call/text you back to confirm a time.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span class="inline-flex items-center rounded-full bg-fog px-3 py-1 text-xs font-semibold text-slate"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>Fast response</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;form class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3" onsubmit="return fakeSubmit(event)"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;label class="block"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;span class="text-xs font-semibold text-slate"&gt;Name&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;input required type="text" placeholder="Jane Doe"</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink" /&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;/label&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;label class="block"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;span class="text-xs font-semibold text-slate"&gt;Phone&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;input required type="tel" placeholder="(508) 555-0123"</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink" /&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;/label&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;label class="block sm:col-span-2"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;span class="text-xs font-semibold text-slate"&gt;Service Needed&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;select required</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>&lt;option value="" disabled selected&gt;Select one…&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>&lt;option&gt;AC Repair&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>&lt;option&gt;Heating Repair&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>&lt;option&gt;New HVAC Installation&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>&lt;option&gt;Maintenance / Tune-Up&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                    </span>&lt;option&gt;Emergency Service&lt;/option&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>&lt;/select&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;/label&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;button type="submit"</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>class="sm:col-span-2 mt-1 inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-semibold hover:opacity-95 transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>Get a Call Back</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;/button&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;p class="sm:col-span-2 text-xs text-slate mt-1"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                  </span>By submitting, you agree to be contacted about your request. (Demo form — no data is sent.)</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/form&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;div id="demoToast" class="hidden mt-4 rounded-xl border border-black/10 bg-fog px-4 py-3 text-sm text-slate"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span></b><span class="s1">✅</span><b> Demo submitted. In a real build, this would route to email/SMS + CRM.</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;!-- Trust chips --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="mt-6 flex flex-wrap gap-2 text-xs"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;span class="rounded-full border border-black/10 bg-white px-3 py-1 font-semibold text-slate"&gt;Licensed &amp;amp; insured&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;span class="rounded-full border border-black/10 bg-white px-3 py-1 font-semibold text-slate"&gt;Same-day availability&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;span class="rounded-full border border-black/10 bg-white px-3 py-1 font-semibold text-slate"&gt;Upfront estimates&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;!-- Right image panel --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="relative min-h-[40vh] lg:min-h-[86vh]"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;!-- Use a “tech working on HVAC” stock image --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;img</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&amp;fit=crop&amp;w=1600&amp;q=80"</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>alt="HVAC technician servicing an outdoor unit"</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>class="absolute inset-0 h-full w-full object-cover" /&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;!-- Subtle overlay to match the clean Durable feel --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="absolute inset-0 bg-gradient-to-l from-black/0 via-black/0 to-black/10"&gt;&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;!-- SERVICES (cards) --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;section id="services" class="bg-white"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="mx-auto max-w-6xl px-4 py-16"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="max-w-2xl"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;h2 class="text-3xl font-extrabold tracking-tight"&gt;HVAC Services&lt;/h2&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;p class="mt-3 text-slate"&gt;Everything you need to keep your home comfortable year-round—delivered fast, clean, and professional.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;!-- card --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-5 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm font-bold"&gt;AC Repair&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-sm text-slate"&gt;Diagnose and fix cooling issues quickly—restore comfort without guesswork.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-5 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm font-bold"&gt;Heating Repair&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-sm text-slate"&gt;No heat? We troubleshoot furnaces/boilers and get you warm again fast.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-5 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm font-bold"&gt;Installations&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-sm text-slate"&gt;New systems, replacements, upgrades—sized properly for your home and budget.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-5 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm font-bold"&gt;Maintenance&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-sm text-slate"&gt;Seasonal tune-ups to reduce breakdowns, improve efficiency, and extend lifespan.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="mt-10 flex flex-col sm:flex-row gap-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-semibold hover:opacity-95 transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>Request Service</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;a href="tel:+15085550123" class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-black/10 bg-white hover:border-black/20 transition font-semibold"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>Call Now</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;!-- WHY CHOOSE US --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;section class="bg-fog"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="mx-auto max-w-6xl px-4 py-16"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="grid lg:grid-cols-2 gap-10 items-start"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-extrabold tracking-tight"&gt;Why homeowners choose Gervais&lt;/h2&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-3 text-slate"&gt;Your website should sell trust. These are the trust signals that close the call.&lt;/p&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;ul class="mt-6 space-y-3 text-slate"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-white border border-black/10 text-xs font-bold"&gt;</b><span class="s2"><b>✓</b></span><b>&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-semibold text-ink"&gt;Fast response&lt;/span&gt; and clear scheduling—no chasing contractors.&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/li&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-white border border-black/10 text-xs font-bold"&gt;</b><span class="s2"><b>✓</b></span><b>&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-semibold text-ink"&gt;Upfront estimates&lt;/span&gt; and honest recommendations.&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/li&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-white border border-black/10 text-xs font-bold"&gt;</b><span class="s2"><b>✓</b></span><b>&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-semibold text-ink"&gt;Clean, respectful service&lt;/span&gt;—we treat your home like our own.&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/li&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;li class="flex gap-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-white border border-black/10 text-xs font-bold"&gt;</b><span class="s2"><b>✓</b></span><b>&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>&lt;span&gt;&lt;span class="font-semibold text-ink"&gt;Local Worcester area&lt;/span&gt; focus—built for homeowners, not call centers.&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/li&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/ul&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl bg-white border border-black/10 shadow-soft p-6"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm font-semibold text-slate"&gt;What this section does in your funnel&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-ink font-bold text-lg"&gt;It removes uncertainty right before the customer submits the form.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-3 text-slate text-sm"&gt;We pair “trust bullets” with the hero form so the prospect feels safe taking the next step.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;div class="mt-6"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;a href="#contact" class="inline-flex w-full justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-semibold hover:opacity-95 transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>Get a Call Back</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;!-- HOW IT WORKS (3 steps) --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;section id="how" class="bg-white"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="mx-auto max-w-6xl px-4 py-16"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="max-w-2xl"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;h2 class="text-3xl font-extrabold tracking-tight"&gt;How it works&lt;/h2&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;p class="mt-3 text-slate"&gt;Simple process. No confusion. This keeps the customer moving toward the contact form.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="mt-10 grid gap-5 lg:grid-cols-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-xs font-semibold text-slate"&gt;STEP 1&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-lg font-bold"&gt;Request service&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-sm text-slate"&gt;Submit the form or call. Tell us what’s going on—AC, heat, install, or maintenance.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-xs font-semibold text-slate"&gt;STEP 2&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-lg font-bold"&gt;We confirm &amp;amp; schedule&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-sm text-slate"&gt;We contact you quickly to confirm details, pricing expectations, and appointment time.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-xs font-semibold text-slate"&gt;STEP 3&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-lg font-bold"&gt;Comfort restored&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-2 text-sm text-slate"&gt;We complete the work cleanly and professionally—and make sure you’re satisfied.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;!-- SERVICE AREAS --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;section id="areas" class="bg-fog"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="mx-auto max-w-6xl px-4 py-16"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="grid lg:grid-cols-2 gap-10 items-start"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-extrabold tracking-tight"&gt;Serving Worcester &amp;amp; nearby towns&lt;/h2&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-3 text-slate"&gt;Local relevance increases conversion. People want to know you actually serve their area.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl bg-white border border-black/10 shadow-soft p-6"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm font-semibold text-slate"&gt;Common service areas&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;div class="mt-4 grid grid-cols-2 gap-3 text-sm text-ink"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;span class="rounded-xl border border-black/10 bg-white px-4 py-3"&gt;Worcester&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;span class="rounded-xl border border-black/10 bg-white px-4 py-3"&gt;Shrewsbury&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;span class="rounded-xl border border-black/10 bg-white px-4 py-3"&gt;Auburn&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;span class="rounded-xl border border-black/10 bg-white px-4 py-3"&gt;Millbury&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;span class="rounded-xl border border-black/10 bg-white px-4 py-3"&gt;West Boylston&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;span class="rounded-xl border border-black/10 bg-white px-4 py-3"&gt;Holden&lt;/span&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;div class="mt-6"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;a href="#contact" class="inline-flex w-full justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-semibold hover:opacity-95 transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">                </span>Request Service in Your Area</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;!-- TESTIMONIALS --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;section id="reviews" class="bg-white"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="mx-auto max-w-6xl px-4 py-16"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="max-w-2xl"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;h2 class="text-3xl font-extrabold tracking-tight"&gt;Customer reviews&lt;/h2&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;p class="mt-3 text-slate"&gt;Social proof makes the form feel safe. Use real reviews in the final build.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="mt-10 grid gap-5 lg:grid-cols-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm text-slate"&gt;“Quick response, clear communication, and the AC was fixed the same day.”&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-4 text-sm font-bold"&gt;— Homeowner in Worcester&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm text-slate"&gt;“Professional install, clean work, and they explained options without pressure.”&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-4 text-sm font-bold"&gt;— Homeowner in Shrewsbury&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="text-sm text-slate"&gt;“Showed up on time and got our heat back on fast. Would recommend.”&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-4 text-sm font-bold"&gt;— Homeowner in Auburn&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;!-- FINAL CTA --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;section class="bg-ink text-white"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="mx-auto max-w-6xl px-4 py-16"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;div class="grid lg:grid-cols-2 gap-8 items-center"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-extrabold tracking-tight"&gt;Ready to get comfort back today?&lt;/h2&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;p class="mt-3 text-white/80"&gt;This page is built like a funnel: strong hero + trust + process + proof </b><span class="s2"><b>→</b></span><b> contact form conversion.&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;div class="flex flex-col sm:flex-row gap-3 lg:justify-end"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-white text-ink font-semibold hover:opacity-95 transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>Request Service</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;a href="tel:+15085550123" class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-white/25 text-white font-semibold hover:border-white/40 transition"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">              </span>Call (508) 555-0123</b></p>
+<p class="p1"><b><span class="Apple-converted-space">            </span>&lt;/a&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/div&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;p class="mt-10 text-xs text-white/60"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">          </span>Demo mockup for presentation. Final builds are delivered in WordPress (10Web) with client-owned domain + hosting options.</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/section&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;footer class="bg-white"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3"&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;p&gt;© &lt;span id="year"&gt;&lt;/span&gt; Gervais Mechanical LLC — Worcester, MA&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">        </span>&lt;p class="text-xs"&gt;Demo site • Built for funnel presentation&lt;/p&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>&lt;/div&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>&lt;/footer&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;/main&gt;</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;script&gt;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>document.getElementById('year').textContent = new Date().getFullYear();</b></p>
+<p class="p2"><b></b><br></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>function fakeSubmit(e) {</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>e.preventDefault();</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>const toast = document.getElementById('demoToast');</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>toast.classList.remove('hidden');</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });</b></p>
+<p class="p1"><b><span class="Apple-converted-space">      </span>return false;</b></p>
+<p class="p1"><b><span class="Apple-converted-space">    </span>}</b></p>
+<p class="p1"><b><span class="Apple-converted-space">  </span>&lt;/script&gt;</b></p>
+<p class="p1"><b>&lt;/body&gt;</b></p>
+<p class="p1"><b>&lt;/html&gt;</b></p>
+</body>
+</html>
