@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gervais Mechanical LLC | Worcester, MA HVAC</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind config MUST come before CDN -->
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui']
+          },
+          colors: {
+            ink: '#0F172A',
+            slate: '#334155',
+            sand: '#F7F4EE',
+            fog: '#EEF2F6'
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(15, 23, 42, 0.08)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="font-sans text-ink bg-white">
+
+<!-- HERO -->
+<section class="min-h-screen grid lg:grid-cols-2">
+  <!-- Left -->
+  <div class="bg-sand flex items-center">
+    <div class="max-w-xl px-8 py-20">
+      <p class="text-sm font-medium text-slate">Worcester, MA • Heating • Cooling</p>
+
+      <h1 class="mt-5 text-5xl font-extrabold leading-tight">
+        Reliable Heating & Cooling Services
+      </h1>
+
+      <p class="mt-5 text-lg text-slate">
+        Gervais Mechanical LLC provides fast, professional HVAC service for homeowners in Worcester and surrounding areas.
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <a href="#contact" class="px-6 py-3 bg-ink text-white rounded-xl font-semibold shadow-soft">
+          Schedule Service
+        </a>
+        <a href="#services" class="px-6 py-3 border border-black/10 rounded-xl font-semibold">
+          View Services
+        </a>
+      </div>
+
+      <!-- Contact Form -->
+      <div id="contact" class="mt-10 bg-white rounded-2xl border border-black/10 shadow-soft p-6">
+        <h2 class="font-bold text-lg">Request Service</h2>
+
+        <form class="mt-4 grid gap-3">
+          <input class="border border-black/10 rounded-xl px-4 py-3" placeholder="Name" />
+          <input class="border border-black/10 rounded-xl px-4 py-3" placeholder="Phone" />
+          <select class="border border-black/10 rounded-xl px-4 py-3">
+            <option>AC Repair</option>
+            <option>Heating Repair</option>
+            <option>Installation</option>
+            <option>Maintenance</option>
+          </select>
+          <button class="bg-ink text-white rounded-xl py-3 font-semibold">
+            Get a Call Back
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Image -->
+  <div class="relative">
+    <img
+      src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1600&q=80"
+      class="absolute inset-0 w-full h-full object-cover"
+      alt="HVAC technician"
+    />
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold">HVAC Services</h2>
+
+    <div class="mt-10 grid md:grid-cols-4 gap-6">
+      <div class="p-6 border rounded-2xl shadow-soft">AC Repair</div>
+      <div class="p-6 border rounded-2xl shadow-soft">Heating Repair</div>
+      <div class="p-6 border rounded-2xl shadow-soft">Installations</div>
+      <div class="p-6 border rounded-2xl shadow-soft">Maintenance</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-ink text-white py-20">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+    <h2 class="text-3xl font-extrabold">Ready to restore comfort?</h2>
+    <a href="#contact" class="bg-white text-ink px-6 py-3 rounded-xl font-semibold">
+      Request Service
+    </a>
+  </div>
+</section>
+
+<footer class="py-8 text-center text-sm text-slate">
+  Demo mockup • Final builds delivered in WordPress
+</footer>
+
+</body>
+</html>
