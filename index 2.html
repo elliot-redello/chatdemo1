@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gervais Mechanical LLC | Worcester, MA HVAC</title>
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind config MUST come before CDN -->
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            ink: '#0F172A',
+            slate: '#334155',
+            sand: '#F7F4EE',
+            fog: '#EEF2F6',
+            mint: '#E7F3EE'
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(15, 23, 42, 0.10)',
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="font-sans text-ink bg-white">
+
+<!-- Top promo bar -->
+<div class="bg-ink text-white">
+  <div class="mx-auto max-w-6xl px-4 py-2 text-xs sm:text-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+    <span class="opacity-90">Same-day service when available • Upfront estimates • Licensed & insured</span>
+    <a href="tel:+15085550123" class="font-semibold underline underline-offset-2">Call (508) 555-0123</a>
+  </div>
+</div>
+
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-black/5">
+  <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+    <a href="#top" class="font-extrabold tracking-tight">Gervais Mechanical</a>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate">
+      <a href="#services" class="hover:text-ink">Services</a>
+      <a href="#why" class="hover:text-ink">Why us</a>
+      <a href="#how" class="hover:text-ink">Process</a>
+      <a href="#areas" class="hover:text-ink">Areas</a>
+      <a href="#reviews" class="hover:text-ink">Reviews</a>
+      <a href="#faq" class="hover:text-ink">FAQ</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="#contact" class="inline-flex items-center justify-center px-4 py-2 rounded-full border-2 border-ink text-sm font-semibold hover:bg-ink hover:text-white transition">
+        Request service
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO (Durable-style split) -->
+<section id="top" class="grid lg:grid-cols-2 min-h-[86vh]">
+  <!-- Left -->
+  <div class="bg-sand flex items-center">
+    <div class="mx-auto max-w-xl px-6 py-14 lg:py-20">
+      <p class="text-sm font-medium text-slate">Worcester, MA • Residential HVAC • Repairs • Installs</p>
+
+      <h1 class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.05]">
+        Reliable Heating &amp; Cooling—Fast, Clean, Professional
+      </h1>
+
+      <p class="mt-5 text-base sm:text-lg text-slate leading-relaxed">
+        Gervais Mechanical LLC helps Worcester homeowners fix heating and AC issues quickly, with clear communication, upfront pricing, and respectful service.
+      </p>
+
+      <div class="mt-7 flex flex-col sm:flex-row gap-3">
+        <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-semibold shadow-soft hover:opacity-95 transition">
+          Schedule Service Now
+        </a>
+        <a href="#services" class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-black/10 bg-white hover:border-black/20 transition font-semibold">
+          View Services
+        </a>
+      </div>
+
+      <!-- Trust chips -->
+      <div class="mt-6 flex flex-wrap gap-2 text-xs">
+        <span class="rounded-full border border-black/10 bg-white px-3 py-1 font-semibold text-slate">Licensed &amp; insured</span>
+        <span class="rounded-full border border-black/10 bg-white px-3 py-1 font-semibold text-slate">Same-day availability</span>
+        <span class="rounded-full border border-black/10 bg-white px-3 py-1 font-semibold text-slate">Upfront estimates</span>
+        <span class="rounded-full border border-black/10 bg-white px-3 py-1 font-semibold text-slate">Respectful in-home service</span>
+      </div>
+
+      <!-- HERO CONTACT FORM (funnel anchor) -->
+      <div id="contact" class="mt-9 rounded-2xl bg-white border border-black/10 shadow-soft">
+        <div class="p-5 sm:p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h2 class="text-lg font-extrabold tracking-tight">Request Service</h2>
+              <p class="mt-1 text-sm text-slate">We’ll call/text you back to confirm details and schedule.</p>
+            </div>
+            <span class="inline-flex items-center rounded-full bg-fog px-3 py-1 text-xs font-semibold text-slate">
+              Fast response
+            </span>
+          </div>
+
+          <form class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-3" onsubmit="return fakeSubmit(event)">
+            <label class="block">
+              <span class="text-xs font-semibold text-slate">Name</span>
+              <input required type="text" placeholder="Jane Doe"
+                class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink" />
+            </label>
+
+            <label class="block">
+              <span class="text-xs font-semibold text-slate">Phone</span>
+              <input required type="tel" placeholder="(508) 555-0123"
+                class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink" />
+            </label>
+
+            <label class="block sm:col-span-2">
+              <span class="text-xs font-semibold text-slate">Service Needed</span>
+              <select required
+                class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink">
+                <option value="" disabled selected>Select one…</option>
+                <option>AC Repair</option>
+                <option>Heating Repair</option>
+                <option>New HVAC Installation</option>
+                <option>Maintenance / Tune-Up</option>
+                <option>Emergency Service</option>
+              </select>
+            </label>
+
+            <label class="block sm:col-span-2">
+              <span class="text-xs font-semibold text-slate">What’s going on?</span>
+              <input type="text" placeholder="No heat, strange noise, weak airflow…"
+                class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink" />
+            </label>
+
+            <button type="submit"
+              class="sm:col-span-2 mt-1 inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-extrabold hover:opacity-95 transition">
+              Get a Call Back
+            </button>
+
+            <p class="sm:col-span-2 text-xs text-slate mt-1">
+              Demo form — no data is sent. In production, this routes to email/SMS + CRM.
+            </p>
+          </form>
+
+          <div id="demoToast" class="hidden mt-4 rounded-xl border border-black/10 bg-fog px-4 py-3 text-sm text-slate">
+            ✅ Demo submitted. Imagine this triggering an instant “thanks” text + callback workflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right image panel -->
+  <div class="relative min-h-[40vh] lg:min-h-[86vh]">
+    <img
+      src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1800&q=80"
+      alt="HVAC technician"
+      class="absolute inset-0 h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-l from-black/0 via-black/0 to-black/10"></div>
+
+    <!-- floating proof card -->
+    <div class="absolute bottom-6 left-6 right-6 md:right-auto md:max-w-sm rounded-2xl bg-white/90 backdrop-blur border border-black/10 shadow-soft p-5">
+      <p class="text-xs font-semibold text-slate">What this page is built to do</p>
+      <p class="mt-1 font-extrabold">Turn site visits into calls.</p>
+      <p class="mt-2 text-sm text-slate">Clear offer, trust, proof, and a frictionless contact form—above the fold.</p>
+    </div>
+  </div>
+</section>
+
+<!-- “As seen / trust logos” band -->
+<section class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    <div class="rounded-2xl border border-black/10 bg-fog p-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+          <p class="text-sm font-extrabold">Trusted by homeowners who want it done right.</p>
+          <p class="mt-1 text-sm text-slate">In production, we’d use real affiliations, licensing, and review platforms.</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-semibold text-slate">
+          <span class="rounded-xl bg-white border border-black/10 px-3 py-2 text-center">Google Reviews</span>
+          <span class="rounded-xl bg-white border border-black/10 px-3 py-2 text-center">Better Business</span>
+          <span class="rounded-xl bg-white border border-black/10 px-3 py-2 text-center">Licensed</span>
+          <span class="rounded-xl bg-white border border-black/10 px-3 py-2 text-center">Insured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES (cards) -->
+<section id="services" class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-extrabold tracking-tight">HVAC Services</h2>
+      <p class="mt-3 text-slate">Everything you need to stay comfortable year-round—delivered fast, clean, and professional.</p>
+    </div>
+
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="rounded-2xl border border-black/10 bg-white overflow-hidden shadow-soft">
+        <img class="h-36 w-full object-cover" alt="AC repair"
+             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80">
+        <div class="p-5">
+          <p class="text-sm font-extrabold">AC Repair</p>
+          <p class="mt-2 text-sm text-slate">Diagnose weak airflow, warm air, leaks, and noisy units—fast.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-black/10 bg-white overflow-hidden shadow-soft">
+        <img class="h-36 w-full object-cover" alt="Heating repair"
+             src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80">
+        <div class="p-5">
+          <p class="text-sm font-extrabold">Heating Repair</p>
+          <p class="mt-2 text-sm text-slate">No heat? Short cycling? We troubleshoot and restore warmth quickly.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-black/10 bg-white overflow-hidden shadow-soft">
+        <img class="h-36 w-full object-cover" alt="Installation"
+             src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1200&q=80">
+        <div class="p-5">
+          <p class="text-sm font-extrabold">Installations</p>
+          <p class="mt-2 text-sm text-slate">Right-sized systems, clean installs, and a clear plan from day one.</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-black/10 bg-white overflow-hidden shadow-soft">
+        <img class="h-36 w-full object-cover" alt="Maintenance"
+             src="https://images.unsplash.com/photo-1581093458791-9f3a7a5a66b1?auto=format&fit=crop&w=1200&q=80">
+        <div class="p-5">
+          <p class="text-sm font-extrabold">Maintenance</p>
+          <p class="mt-2 text-sm text-slate">Seasonal tune-ups to reduce breakdowns and improve efficiency.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 flex flex-col sm:flex-row gap-3">
+      <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-extrabold hover:opacity-95 transition">
+        Request Service
+      </a>
+      <a href="#quote" class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-black/10 bg-white hover:border-black/20 transition font-extrabold">
+        Get a Quick Estimate
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="bg-fog">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl font-extrabold tracking-tight">Why homeowners choose Gervais</h2>
+        <p class="mt-3 text-slate">This section exists to remove uncertainty right before someone fills out the form.</p>
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+            <p class="text-sm font-extrabold">Clear communication</p>
+            <p class="mt-2 text-sm text-slate">We explain what’s wrong and what it takes to fix it—without jargon.</p>
+          </div>
+          <div class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+            <p class="text-sm font-extrabold">Upfront estimates</p>
+            <p class="mt-2 text-sm text-slate">No surprise invoices. You’ll know the plan before work begins.</p>
+          </div>
+          <div class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+            <p class="text-sm font-extrabold">Respectful service</p>
+            <p class="mt-2 text-sm text-slate">Boot covers, clean work area, and a professional finish.</p>
+          </div>
+          <div class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+            <p class="text-sm font-extrabold">Local Worcester focus</p>
+            <p class="mt-2 text-sm text-slate">We’re built for local homeowners—not a national call center.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-black/10 shadow-soft p-6">
+        <p class="text-xs font-semibold text-slate">Quick quote (demo)</p>
+        <h3 class="mt-2 text-xl font-extrabold" id="quote">Estimate your service range</h3>
+        <p class="mt-2 text-sm text-slate">Not a real quote—this shows how a funnel can reduce price anxiety and increase form submissions.</p>
+
+        <div class="mt-5 grid gap-3">
+          <label class="block">
+            <span class="text-xs font-semibold text-slate">Type of service</span>
+            <select id="svc" class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink">
+              <option>AC Repair</option>
+              <option>Heating Repair</option>
+              <option>Maintenance / Tune-Up</option>
+              <option>New Installation</option>
+            </select>
+          </label>
+
+          <label class="block">
+            <span class="text-xs font-semibold text-slate">Urgency</span>
+            <select id="urg" class="mt-1 w-full rounded-xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-ink">
+              <option>Flexible (next few days)</option>
+              <option>Today if possible</option>
+              <option>Emergency (no heat/AC)</option>
+            </select>
+          </label>
+
+          <button onclick="showEstimate()" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-extrabold hover:opacity-95 transition">
+            Show Demo Range
+          </button>
+
+          <div id="estBox" class="hidden rounded-xl border border-black/10 bg-fog px-4 py-3 text-sm text-slate">
+            <span class="font-extrabold text-ink">Demo range:</span> <span id="estText"></span>
+            <div class="mt-2 text-xs">In production, we’d tailor this to real pricing logic or “starting at” ranges.</div>
+          </div>
+
+          <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-black/10 bg-white hover:border-black/20 transition font-extrabold">
+            Request Service Instead
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-extrabold tracking-tight">How it works</h2>
+      <p class="mt-3 text-slate">Simple process. No confusion. Keeps homeowners moving toward the form.</p>
+    </div>
+
+    <div class="mt-10 grid gap-5 lg:grid-cols-3">
+      <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+        <p class="text-xs font-semibold text-slate">STEP 1</p>
+        <p class="mt-2 text-lg font-extrabold">Request service</p>
+        <p class="mt-2 text-sm text-slate">Submit the form or call. Tell us what you’re experiencing.</p>
+      </div>
+      <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+        <p class="text-xs font-semibold text-slate">STEP 2</p>
+        <p class="mt-2 text-lg font-extrabold">Confirm &amp; schedule</p>
+        <p class="mt-2 text-sm text-slate">We follow up quickly to confirm details and a time window.</p>
+      </div>
+      <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+        <p class="text-xs font-semibold text-slate">STEP 3</p>
+        <p class="mt-2 text-lg font-extrabold">Comfort restored</p>
+        <p class="mt-2 text-sm text-slate">We complete the work cleanly and verify everything is running right.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section id="areas" class="bg-fog">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <div class="grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl font-extrabold tracking-tight">Serving Worcester &amp; nearby towns</h2>
+        <p class="mt-3 text-slate">Local relevance increases conversion—people want to know you actually serve their neighborhood.</p>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-black/10 shadow-soft p-6">
+        <p class="text-sm font-extrabold">Common service areas</p>
+        <div class="mt-4 grid grid-cols-2 gap-3 text-sm text-ink">
+          <span class="rounded-xl border border-black/10 bg-white px-4 py-3">Worcester</span>
+          <span class="rounded-xl border border-black/10 bg-white px-4 py-3">Shrewsbury</span>
+          <span class="rounded-xl border border-black/10 bg-white px-4 py-3">Auburn</span>
+          <span class="rounded-xl border border-black/10 bg-white px-4 py-3">Millbury</span>
+          <span class="rounded-xl border border-black/10 bg-white px-4 py-3">Holden</span>
+          <span class="rounded-xl border border-black/10 bg-white px-4 py-3">West Boylston</span>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex w-full justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-extrabold hover:opacity-95 transition">
+            Request Service
+          </a>
+          <a href="tel:+15085550123" class="inline-flex w-full justify-center items-center px-6 py-3 rounded-xl border border-black/10 bg-white hover:border-black/20 transition font-extrabold">
+            Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-extrabold tracking-tight">Customer reviews</h2>
+      <p class="mt-3 text-slate">Social proof makes the form feel safe. Replace with real reviews in production.</p>
+    </div>
+
+    <div class="mt-10 grid gap-5 lg:grid-cols-3">
+      <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+        <p class="text-sm text-slate">“Quick response, clear communication, and the AC was fixed the same day.”</p>
+        <p class="mt-4 text-sm font-extrabold">— Homeowner in Worcester</p>
+      </div>
+      <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+        <p class="text-sm text-slate">“Professional install and clean work. They explained options without pressure.”</p>
+        <p class="mt-4 text-sm font-extrabold">— Homeowner in Shrewsbury</p>
+      </div>
+      <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-soft">
+        <p class="text-sm text-slate">“Showed up on time and got our heat back on fast. Would recommend.”</p>
+        <p class="mt-4 text-sm font-extrabold">— Homeowner in Auburn</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-fog">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-extrabold tracking-tight">FAQ</h2>
+      <p class="mt-3 text-slate">This reduces objections on the page so they don’t become objections on the call.</p>
+    </div>
+
+    <div class="mt-10 grid gap-4 lg:grid-cols-2">
+      <details class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+        <summary class="cursor-pointer font-extrabold">Do you offer same-day service?</summary>
+        <p class="mt-2 text-sm text-slate">When availability allows, yes. Submit the form and we’ll confirm the soonest window.</p>
+      </details>
+
+      <details class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+        <summary class="cursor-pointer font-extrabold">Do you provide upfront estimates?</summary>
+        <p class="mt-2 text-sm text-slate">Yes. We’ll explain the issue and the plan before work begins.</p>
+      </details>
+
+      <details class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+        <summary class="cursor-pointer font-extrabold">What areas do you serve?</summary>
+        <p class="mt-2 text-sm text-slate">Worcester and nearby towns—see the service area section above.</p>
+      </details>
+
+      <details class="rounded-2xl bg-white border border-black/10 shadow-soft p-5">
+        <summary class="cursor-pointer font-extrabold">Is this the final website?</summary>
+        <p class="mt-2 text-sm text-slate">This is a demo funnel page to show structure and messaging. Final builds are delivered in WordPress.</p>
+      </details>
+    </div>
+
+    <div class="mt-10">
+      <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-ink text-white font-extrabold hover:opacity-95 transition">
+        Request Service
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="bg-ink text-white">
+  <div class="mx-auto max-w-6xl px-4 py-16">
+    <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-3xl font-extrabold tracking-tight">Ready to get comfort back today?</h2>
+        <p class="mt-3 text-white/80">This page is built like a funnel: offer + trust + process + proof → contact form conversion.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3 lg:justify-end">
+        <a href="#contact" class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-white text-ink font-extrabold hover:opacity-95 transition">
+          Request Service
+        </a>
+        <a href="tel:+15085550123" class="inline-flex justify-center items-center px-6 py-3 rounded-xl border border-white/25 text-white font-extrabold hover:border-white/40 transition">
+          Call (508) 555-0123
+        </a>
+      </div>
+    </div>
+
+    <p class="mt-10 text-xs text-white/60">
+      Demo mockup for presentation. Final builds delivered in WordPress with client-owned domain + hosting options.
+    </p>
+  </div>
+</section>
+
+<footer class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+    <p>© <span id="year"></span> Gervais Mechanical LLC — Worcester, MA</p>
+    <p class="text-xs">Demo funnel page • Built for sales presentation</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function fakeSubmit(e) {
+    e.preventDefault();
+    const toast = document.getElementById('demoToast');
+    toast.classList.remove('hidden');
+    toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    return false;
+  }
+
+  function showEstimate() {
+    const svc = document.getElementById('svc').value;
+    const urg = document.getElementById('urg').value;
+
+    // demo ranges (placeholder logic)
+    let range = '$129–$249';
+    if (svc.includes('Maintenance')) range = '$99–$179';
+    if (svc.includes('New Installation')) range = '$4,500–$12,000';
+    if (urg.includes('Emergency')) range = range + ' (after-hours may apply)';
+
+    document.getElementById('estText').textContent = `${svc} • ${urg} → ${range}`;
+    document.getElementById('estBox').classList.remove('hidden');
+  }
+</script>
+
+</body>
+</html>
